@@ -24,6 +24,14 @@ wget https://www.dropbox.com/s/p2cmys23oosxl0k/best_model.h5
 
 ## Run
 
+Run server using uvicorn
+
 ```
 uvicorn server:app --reload
 ```
+
+Usage example
+```
+GET http://127.0.0.1:8000/predict/image4.jpg
+```
+make sure your image in `image` directory
